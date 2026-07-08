@@ -248,7 +248,7 @@ export const About: React.FC = () => {
         @media (max-width: 991px) {
           .about-grid {
             grid-template-columns: 1fr;
-            gap: 40px;
+            gap: 24px;
           }
         }
 
@@ -256,15 +256,22 @@ export const About: React.FC = () => {
           .about-bio-layout {
             flex-direction: column;
             text-align: center;
+            padding: 20px !important;
           }
           .visual-stack-container {
-            margin-top: 20px;
+            margin-top: 16px;
+          }
+          .focus-cards-grid {
+            grid-template-columns: 1fr;
           }
         }
 
-        @media (max-width: 575px) {
-          .focus-cards-grid {
-            grid-template-columns: 1fr;
+        @media (max-width: 480px) {
+          .about-grid {
+            gap: 16px;
+          }
+          .focus-card {
+            padding: 18px !important;
           }
         }
       `}</style>

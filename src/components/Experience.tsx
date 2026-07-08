@@ -208,7 +208,18 @@ export const Experience: React.FC = () => {
         @media (max-width: 768px) {
           .timeline-card-header {
             flex-direction: column;
+            gap: 10px;
           }
+          .timeline-card {
+            padding: 18px !important;
+          }
+          .timeline-wrapper {
+            padding-left: 28px;
+          }
+        }
+        @media (max-width: 480px) {
+          .exp-badge { font-size: 0.62rem; }
+          .timeline-dot { left: -26px; }
         }
       `}</style>
     </section>

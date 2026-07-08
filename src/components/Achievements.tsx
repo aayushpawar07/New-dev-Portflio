@@ -173,16 +173,18 @@ export const Achievements: React.FC = () => {
           transform: translateY(-4px) !important;
         }
 
-        @media (max-width: 991px) {
+        @media (max-width: 768px) {
           .achievement-stats-grid {
             grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
           }
           .cert-grid {
             grid-template-columns: repeat(2, 1fr);
           }
+          .ach-value { font-size: 1.8rem; }
+          .ach-stat-card { padding: 20px 14px !important; }
         }
-
-        @media (max-width: 575px) {
+        @media (max-width: 480px) {
           .achievement-stats-grid {
             grid-template-columns: 1fr 1fr;
           }

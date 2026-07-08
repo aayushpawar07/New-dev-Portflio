@@ -262,10 +262,26 @@ export const Contact: React.FC = () => {
         @media (max-width: 991px) {
           .contact-grid {
             grid-template-columns: 1fr;
-            gap: 40px;
+            gap: 32px;
           }
           .form-row {
             grid-template-columns: 1fr;
+          }
+        }
+        @media (max-width: 768px) {
+          .contact-headline {
+            font-size: 1.5rem;
+          }
+          .contact-form-card {
+            padding: 24px !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .contact-headline {
+            font-size: 1.3rem;
+          }
+          .contact-form-card {
+            padding: 18px !important;
           }
         }
       `}</style>

@@ -309,6 +309,20 @@ GET  /api/admin/reports --> Retrieve monthly billing logs`,
           background: var(--proj-accent);
           color: #000;
         }
+
+        @media (max-width: 768px) {
+          .projects-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+        @media (max-width: 480px) {
+          .projects-grid {
+            grid-template-columns: 1fr;
+          }
+          .filter-tabs {
+            gap: 6px;
+          }
+        }
       `}</style>
     </section>
   );

@@ -187,21 +187,22 @@ export const Footer: React.FC = () => {
         @media (max-width: 768px) {
           .footer-grid {
             grid-template-columns: 1fr 1fr;
+            gap: 28px;
           }
-          .footer-grid > div:last-child {
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            grid-column: 1 / -1;
+          .footer-bottom {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
           }
         }
-
         @media (max-width: 480px) {
           .footer-grid {
             grid-template-columns: 1fr;
           }
           .footer-grid > div:last-child {
-            align-items: flex-start;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
           }
         }
       `}</style>

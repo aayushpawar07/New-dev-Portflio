@@ -236,6 +236,15 @@ export const Skills: React.FC<SkillsProps> = ({ selectedSkill, onSelectSkill }) 
           .skills-grid {
             grid-template-columns: 1fr;
           }
+          .skill-category-card {
+            padding: 20px !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .skill-chip {
+            font-size: 0.75rem;
+            padding: 4px 10px;
+          }
         }
       `}</style>
     </section>

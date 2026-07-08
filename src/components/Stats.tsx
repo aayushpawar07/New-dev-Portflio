@@ -369,12 +369,18 @@ export const Stats: React.FC = () => {
           outline: 1px solid rgba(255,255,255,0.2);
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 991px) {
+          .stats-top-row {
+            grid-template-columns: 1fr;
+          }
           .stats-bottom-row {
             grid-template-columns: 1fr 1fr;
           }
           .stats-bottom-row > .stats-panel:first-child {
             grid-column: 1 / -1;
+          }
+          .leetcode-card {
+            flex-direction: row;
           }
         }
 
@@ -387,7 +393,16 @@ export const Stats: React.FC = () => {
           }
           .leetcode-card {
             flex-direction: column;
+            align-items: center;
             text-align: center;
+          }
+          .heatmap-grid {
+            overflow-x: auto;
+            padding-bottom: 4px;
+          }
+          .heat-cell {
+            width: 9px;
+            height: 9px;
           }
         }
 
@@ -395,6 +410,7 @@ export const Stats: React.FC = () => {
           .github-stats-grid {
             grid-template-columns: 1fr 1fr;
           }
+          .stat-value { font-size: 1.55rem; }
         }
       `}</style>
     </section>
